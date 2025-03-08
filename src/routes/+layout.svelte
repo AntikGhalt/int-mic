@@ -42,9 +42,9 @@
     <h2>Microeconomia Avanzata</h2>
     <ul>
         <!-- Esempio: rotta /edgeworth, /robinson, ecc. -->
-        <li><a href="/edgeworth">Edgeworth</a></li>
-        <li><a href="/robinson">Robinson Economy</a></li>
-        <li><a href="/two_consumers_one_producer">2 consumer 1 producer</a></li>
+        <li><a href="/modelli/01_edgeworth">Edgeworth</a></li>
+        <li><a href="/modelli/02_robinson">Robinson Economy</a></li>
+        <li><a href="/modelli/03_twoconsumers_oneproducer">2 consumer 1 producer</a></li>
     </ul>
 </div>
 
