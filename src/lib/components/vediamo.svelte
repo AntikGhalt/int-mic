@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from 'svelte';
+
   // Props da ricevere dal componente padre
   export let title;
   export let description;
@@ -40,6 +42,13 @@
   function openNewTab() {
     window.open(newTabUrl, "_blank");
   }
+
+  onMount(() => {
+    if (formula) {
+      // Renderizza la formula con MathJax 3
+      MathJax.typesetPromise([document.getElementById('mathjax-formula')]);
+    }
+  });
 </script>
 
 <!-- BOX DI TESTO -->
@@ -49,7 +58,7 @@
   <div>{@html description}</div> 
   <!-- <p>{formula}</p> -->
   {#if formula}
-    <p>{@html formula}</p>
+  <div id="mathjax-formula">{formula}</div>
   {/if}
 </div>
 
