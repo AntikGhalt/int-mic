@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
   // Props da ricevere dal componente padre
   export let title;
@@ -14,6 +14,8 @@
   // Definiamo una reference per il container del grafico
   let container;
   let isFullScreen = false;
+
+  let descriptionContainer;
 
   // Funzione fullscreen: utilizza la reference 'container'
   function handleFullScreen() {
@@ -44,22 +46,19 @@
   }
 
   onMount(() => {
-    if (formula) {
-      // Renderizza la formula con MathJax 3
-      MathJax.typesetPromise([document.getElementById('mathjax-formula')]);
-    }
+    // Attende che MathJax sia completamente inizializzato
+    window.MathJax.startup.promise.then(() => {
+      window.MathJax.typesetPromise([descriptionContainer]);
+    });
   });
 </script>
 
 <!-- BOX DI TESTO -->
 <div class="content-box">
   <h2>{title}</h2>
-   <!-- Mostriamo la formula con MathJax (se presente) usando {@html} per evitare errori -->
-  <div>{@html description}</div> 
+  <!-- Mostriamo la formula con MathJax (se presente) usando {@html} per evitare errori -->
+  <div bind:this={descriptionContainer}>{@html description}</div>
   <!-- <p>{formula}</p> -->
-  {#if formula}
-  <div id="mathjax-formula">{formula}</div>
-  {/if}
 </div>
 
 <!-- SEZIONE GRAFICO DESMOS -->
