@@ -6,7 +6,7 @@
 
   // Link per l'iframe, per la nuova tab e per la versione editabile
   export let defaultEmbedUrl;
-  export let newTabUrl = "";
+  export let newTabUrl;
   export let editUrl;
 
   // Definiamo una reference per il container del grafico
