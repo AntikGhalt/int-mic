@@ -10,6 +10,8 @@
       description = "Esempio di spiegazione funzionamento di Desmos"
       formula = {mathFormula}
       defaultEmbedUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
+      newTabUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
+      editUrl = "https://www.desmos.com/calculator/ziofyoyupi"
     />
   </div>
   
