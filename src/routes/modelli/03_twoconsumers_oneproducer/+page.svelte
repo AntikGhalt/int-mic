@@ -1,6 +1,6 @@
 <script>
     import Vediamo from "$lib/components/vediamo.svelte"
-    const mathFormula = "\\(\displaystyle p = \frac{a}{1 - a}\)"
+    const mathFormula = "\\(\\displaystyle  p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}}";
     // Se ti serve logica specifica per questa pagina, la metti qui.
   </script>
   

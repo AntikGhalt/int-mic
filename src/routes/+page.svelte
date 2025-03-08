@@ -1,6 +1,6 @@
 <script>
   import Vediamo from "$lib/components/vediamo.svelte"
-  const mathFormula = "\\(\\displaystyle (x - h)^2 + (y - k)^2 = r^2\\)"
+  const mathFormula = "\\(\\displaystyle (x - h)^2 + (y - k)^2 = r^2\\)";
   // Se ti serve logica specifica per questa pagina, la metti qui.
 </script>
 

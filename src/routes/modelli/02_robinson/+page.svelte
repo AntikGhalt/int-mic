@@ -1,6 +1,6 @@
 <script>
     import Vediamo from "$lib/components/vediamo.svelte"
-    const mathFormula = "\\(\displaystyle p = \frac{a}{1 - a}\)"
+    const mathFormula = String.raw`\[ \Large \frac{w}{p} = a \left( \frac{1 - B(1-a)}{aBT} \right)^{1-a} \]`;
     // Se ti serve logica specifica per questa pagina, la metti qui.
   </script>
   
@@ -10,6 +10,8 @@
       description = "Esempio di spiegazione funzionamento di Desmos"
       formula = {mathFormula}
       defaultEmbedUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
+      newTabUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
+      editUrl = "https://www.desmos.com/calculator/ziofyoyupi"
     />
   </div>
   

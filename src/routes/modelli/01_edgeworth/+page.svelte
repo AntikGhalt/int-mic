@@ -1,21 +1,24 @@
 <script>
   import Vediamo from "$lib/components/vediamo.svelte"
-  const mathFormula = "\\(\\displaystyle p = \frac{a}{1 - a})"
+  const mathFormula = "\\(\\displaystyle p = \\frac{a}{1 - a}\\)";
   // Se ti serve logica specifica per questa pagina, la metti qui.
 </script>
 
 <div>
   <Vediamo
     title="Edgeworth box"
-    description="In questa pagina, trovi un esempio di modello Edgeworth Box integrato in Desmos.  
-        Aggiungi qui le formule, la spiegazione testuale e i rimandi teorici che preferisci.<br><br>
-        Esempio formula Cobb-Douglas:"
+    description = "
+        In questa pagina, trovi un esempio di modello Edgeworth Box integrato in Desmos.  
+        Aggiungi qui le formule, la spiegazione testuale e i rimandi teorici che preferisci. <br/><br/>
+        Esempio formula Cobb-Douglas:
+        "
     formula={mathFormula}
     defaultEmbedUrl="https://www.desmos.com/calculator/ziofyoyupi?embed"
     newTabUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
     editUrl = "https://www.desmos.com/calculator/ziofyoyupi"
   />
 </div>
+
 
 <style>
   /* .intro-box {
