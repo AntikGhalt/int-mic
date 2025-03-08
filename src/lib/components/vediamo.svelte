@@ -45,8 +45,9 @@
 <!-- BOX DI TESTO -->
 <div class="content-box">
   <h2>{title}</h2>
-  <p>{description}</p>
-  <!-- Mostriamo la formula con MathJax (se presente) usando {@html} per evitare errori -->
+   <!-- Mostriamo la formula con MathJax (se presente) usando {@html} per evitare errori -->
+  <div>{@html description}</div> 
+  <!-- <p>{formula}</p> -->
   {#if formula}
     <p>{@html formula}</p>
   {/if}
