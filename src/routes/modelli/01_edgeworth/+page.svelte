@@ -1,6 +1,7 @@
 <script>
   import Vediamo from "$lib/components/vediamo.svelte"
-  const mathFormula = "\\[ \\Large \\frac{w}{p} = a \\left( \\frac{1 - B(1-a)}{aBT} \\right)^{1-a} \\]";
+  const mathFormula1 = "\\[ \\Large p = \\frac{p_1}{p_2} = \\frac{a}{1-a} \\]";
+  const mathFormula2 = "\\[ \\Large p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]";
   // Se ti serve logica specifica per questa pagina, la metti qui.
 </script>
 
@@ -10,7 +11,10 @@
     description = "
         In questa pagina, trovi un esempio di modello Edgeworth Box integrato in Desmos.  
         Aggiungi qui le formule, la spiegazione testuale e i rimandi teorici che preferisci. <br/><br/>
-        Esempio formula Cobb-Douglas: {mathFormula}
+        <strong> Cobb-Douglas with same coefficient: </strong> 
+        {mathFormula1}
+        <strong> Cobb-Douglas with different coefficients: </strong> 
+        {mathFormula2}
         "
     formula = true
     defaultEmbedUrl="https://www.desmos.com/calculator/ziofyoyupi?embed"

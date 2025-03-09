@@ -9,8 +9,10 @@
   <Vediamo
     title="Robinson economy"
       description="Questa sezione introduce il modello economico di Robinson Crusoe, 
-          che illustra le scelte di consumo {mathFormula} e produzione in un contesto di risorse limitate.
-          <br/><br/><strong>Prezzi di equilibrio:</strong>"
+          che illustra le scelte di consumo e produzione in un contesto di risorse limitate.<br/><br/>
+          <strong> Prezzi di equilibrio: </strong> <br/><br/>
+          {mathFormula}
+          "
     formula = true
     defaultEmbedUrl="https://www.desmos.com/calculator/dot005ofqi?embed"
     newTabUrl="https://www.desmos.com/calculator/dot005ofqi?embed"
