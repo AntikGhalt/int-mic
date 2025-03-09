@@ -44,7 +44,21 @@
         <!-- Esempio: rotta /edgeworth, /robinson, ecc. -->
         <li><a href="/modelli/01_edgeworth">Edgeworth</a></li>
         <li><a href="/modelli/02_robinson">Robinson Economy</a></li>
-        <li><a href="/modelli/03_twoconsumers_oneproducer">2 consumer 1 producer</a></li>
+        <li>
+            <a href="/modelli/03_twoconsumers_oneproducer"
+                >2 consumer 1 producer</a
+            >
+        </li>
+    </ul>
+    <h3>Esercizi</h3>
+    <ul class="exercise-list">
+        <!-- Esempio: rotta /edgeworth, /robinson, ecc. -->
+        <li><a href="/modelli/ES01_UMP_ES1">UMP ES1 Cobb-Douglas</a></li>
+        <li><a href="/modelli/ES02_UMP_ES2">UMP ES2 Corn. Solution</a></li>
+        <li><a href="/modelli/ES03_UMP_ES3">UMP ES3 Perf. Compl.</a></li>
+        <li><a href="/modelli/ES04_EMP_ES1">EMP ES1 Cobb-Douglas</a></li>
+        <li><a href="/modelli/ES05_UMP_CES">UMP CES</a></li>
+        <li><a href="/modelli/ES06_EMP_CES">EMP CES</a></li>
     </ul>
 </div>
 
@@ -180,6 +194,29 @@
     .sidebar ul {
         list-style: none;
         margin-top: 5px;
+    }
+
+    .sidebar h3 {
+        font-family: "Merriweather", serif;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #7b1f28;
+    }
+    .sidebar ul.exercise-list {
+        list-style: none;
+        margin-top: 5px;
+        padding-left: 30px; /* per un rientro più accentuato */
+    }
+
+    .sidebar ul.exercise-list li a {
+        color: #302f2f; /* colore leggermente diverso */
+        font-weight: normal; /* meno marcato */
+        font-size: 0.95rem; /* leggermente più piccolo se preferisci */
+    }
+
+    .sidebar ul.exercise-list li a:hover {
+        color: #7b1f28;
+        text-decoration: underline;
     }
 
     .sidebar li {

@@ -9,7 +9,9 @@
     title = "Home"
     description = "Esempio di spiegazione funzionamento di Desmos"
     formula = {mathFormula}
-    defaultEmbedUrl = "https://www.desmos.com/calculator/ibkskwy3k1?embed"
+    defaultEmbedUrl = "https://www.desmos.com/calculator/4ukrylhyqh?embed"
+    newTabUrl = "https://www.desmos.com/calculator/4ukrylhyqh?embed"
+    editUrl = "https://www.desmos.com/calculator/4ukrylhyqh"
   />
 </div>
 
