@@ -7,11 +7,20 @@
 <div>
   <Vediamo 
     title = "Home"
-    description = "Esempio di spiegazione funzionamento di Desmos"
-    formula = {mathFormula}
-    defaultEmbedUrl = "https://www.desmos.com/calculator/4ukrylhyqh?embed"
-    newTabUrl = "https://www.desmos.com/calculator/4ukrylhyqh?embed"
-    editUrl = "https://www.desmos.com/calculator/4ukrylhyqh"
+    description = "Spiegazione funzionamento di Desmos. <br/><br/>
+      Formula circonferenza: <br/><br/>  
+      {mathFormula}<br/><br/>
+      Interazione con grafico interattivo <br/><br/>
+        <ul>
+        <li>Premere il tasto 'Shadows on' per mostrare l'area del cerchio </li>
+        <li>Trascinare 'Radius' per cambiare la dimensione del raggio </li>
+        <li>Trascinare 'Drag' per cambiare la posizione della della figura </li>
+        <li>Cambiare il valore dell'esponente della formula per ottenere trasformare il cerchio in un quadrato</li>
+        "
+    formula = true
+    defaultEmbedUrl = "https://www.desmos.com/calculator/ud7jgofu04?embed"
+    newTabUrl = "https://www.desmos.com/calculator/ud7jgofu04?embed"
+    editUrl = "https://www.desmos.com/calculator/ud7jgofu04"
   />
 </div>
 
