@@ -10,7 +10,6 @@
       title="UMP esercizio 1: Cobb-Douglas"
       description="Esercizio Utility Maximization Problem basato su una funzione di utilità Cobb-Douglas:
           "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

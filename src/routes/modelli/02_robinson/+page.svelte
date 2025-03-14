@@ -13,7 +13,6 @@
           <strong> Prezzi di equilibrio: </strong> <br/><br/>
           {mathFormula}
           "
-    formula = true
     defaultEmbedUrl="https://www.desmos.com/calculator/dot005ofqi?embed"
     newTabUrl="https://www.desmos.com/calculator/dot005ofqi?embed"
     editUrl="https://www.desmos.com/calculator/dot005ofqi"

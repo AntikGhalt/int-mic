@@ -10,7 +10,6 @@
       title="UMP ES. 3"
       description="Esercizio Utility Maximization Problem basato su perfetti complementi:
           "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

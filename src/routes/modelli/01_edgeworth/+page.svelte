@@ -16,7 +16,6 @@
         <strong> Cobb-Douglas with different coefficients: </strong> 
         {mathFormula2}
         "
-    formula = true
     defaultEmbedUrl="https://www.desmos.com/calculator/ziofyoyupi?embed"
     newTabUrl = "https://www.desmos.com/calculator/ziofyoyupi?embed"
     editUrl = "https://www.desmos.com/calculator/ziofyoyupi"

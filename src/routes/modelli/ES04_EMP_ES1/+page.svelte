@@ -10,7 +10,6 @@
       title="EMP ES. 1"
       description="Esercizio di Expenditure Minimization Problem basato su una funzione di utilità Cobb-Douglas:
           "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

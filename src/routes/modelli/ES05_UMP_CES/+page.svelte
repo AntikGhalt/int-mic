@@ -10,7 +10,6 @@
       title="UMP Esercizio con CES"
       description="Esercizio Utility Maximization Problem basato su funzione di utilità Constant Elasticity of Substitution:
           "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

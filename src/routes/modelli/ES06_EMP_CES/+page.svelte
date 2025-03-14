@@ -10,7 +10,6 @@
       title="EMP Esercizio con CES"
       description="Esercizio Expenditure Minimization Problem basato su funzione di utilità Constant Elasticity of Substitution:
       "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

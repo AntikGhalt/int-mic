@@ -15,7 +15,6 @@
         <strong>Economy with 2 consumers and production:</strong><br/><br/>
          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula2}
         "
-    formula= true
     defaultEmbedUrl = "https://www.desmos.com/calculator/5uqaldlwet?embed"
     newTabUrl = "https://www.desmos.com/calculator/5uqaldlwet?embed"
     editUrl = "https://www.desmos.com/calculator/5uqaldlwet"

@@ -10,7 +10,6 @@
       title="UMP esercizio 2"
       description="Esercizio due di Utility Maximization Problem, con corner solutions: 
           "
-      formula= false
       defaultEmbedUrl = {defaultEmbedUrl}
       newTabUrl = {defaultEmbedUrl}
       editUrl = {defaultEmbedUrl}

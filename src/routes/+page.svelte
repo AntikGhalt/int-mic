@@ -17,7 +17,6 @@
         <li>Trascinare 'Drag' per cambiare la posizione della della figura </li>
         <li>Cambiare il valore dell'esponente della formula per ottenere trasformare il cerchio in un quadrato</li>
         "
-    formula = true
     defaultEmbedUrl = "https://www.desmos.com/calculator/ud7jgofu04?embed"
     newTabUrl = "https://www.desmos.com/calculator/ud7jgofu04?embed"
     editUrl = "https://www.desmos.com/calculator/ud7jgofu04"

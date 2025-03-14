@@ -5,7 +5,6 @@
   // Props da ricevere dal componente padre
   export let title;
   export let description;
-  export let formula;
 
   // Link per l'iframe, per la nuova tab e per la versione editabile
   export let defaultEmbedUrl;
