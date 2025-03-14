@@ -1,5 +1,6 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
+  import { browser } from "$app/environment";
 
   // Props da ricevere dal componente padre
   export let title;
@@ -11,45 +12,49 @@
   export let newTabUrl;
   export let editUrl;
 
-  // Definiamo una reference per il container del grafico
+  // Variabili per fullscreen
   let container;
   let isFullScreen = false;
-
   let descriptionContainer;
-
-  // Funzione fullscreen: utilizza la reference 'container'
-  function handleFullScreen() {
-    if (!isFullScreen) {
-      isFullScreen = true;
-      if (container.requestFullscreen) {
-        container.requestFullscreen();
-      } else if (container.webkitRequestFullscreen) {
-        container.webkitRequestFullscreen();
-      } else if (container.msRequestFullscreen) {
-        container.msRequestFullscreen();
-      }
-    } else {
-      isFullScreen = false;
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
-    }
-  }
 
   // Funzione per aprire una nuova scheda
   function openNewTab() {
     window.open(newTabUrl, "_blank");
   }
 
+  // Funzione fullscreen: utilizza la reference 'container'
+  function handleFullScreen() {
+    if (!isFullScreen) {
+      container.requestFullscreen?.();
+    } else {
+      document.exitFullscreen?.();
+    }
+  }
+
   onMount(() => {
-    // Attende che MathJax sia completamente inizializzato
-    window.MathJax.startup.promise.then(() => {
-      window.MathJax.typesetPromise([descriptionContainer]);
-    });
+    if (browser) {
+      // Questo codice viene eseguito solo nel browser
+      // Attendere che MathJax sia completamente inizializzato
+      if (window.MathJax) {
+        window.MathJax.startup.promise.then(() => {
+          window.MathJax.typesetPromise([descriptionContainer]);
+        });
+      }
+
+      // Aggiungi l'ascoltatore per il cambiamento di fullscreen solo nel browser
+      document.addEventListener("fullscreenchange", () => {
+        isFullScreen = !!document.fullscreenElement;
+      });
+    }
+  });
+
+  onDestroy(() => {
+    if (browser) {
+      // Rimuovi l'ascoltatore del fullscreen quando il componente viene distrutto
+      document.removeEventListener("fullscreenchange", () => {
+        isFullScreen = !!document.fullscreenElement;
+      });
+    }
   });
 </script>
 
@@ -58,7 +63,6 @@
   <h2>{title}</h2>
   <!-- Mostriamo la formula con MathJax (se presente) usando {@html} per evitare errori -->
   <div bind:this={descriptionContainer}>{@html description}</div>
-  <!-- <p>{formula}</p> -->
 </div>
 
 <!-- SEZIONE GRAFICO DESMOS -->
@@ -66,12 +70,12 @@
   <div class="graph-top-bar">
     <p>Grafico interattivo {title}</p>
     <div class="button-group">
-      <button class="fullscreen-btn" on:click={handleFullScreen}
-        >{!isFullScreen ? "Tutto Schermo" : "Riduci"}</button
-      >
-      <button class="newtab-btn" on:click={openNewTab}
-        >Apri in nuova pagina</button
-      >
+      <button class="fullscreen-btn" on:click={handleFullScreen}>
+        {!isFullScreen ? "Tutto Schermo" : "Riduci"}
+      </button>
+      <button class="newtab-btn" on:click={openNewTab}>
+        Apri in nuova pagina
+      </button>
     </div>
   </div>
 
