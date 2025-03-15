@@ -1,0 +1,55 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbarCustom {
+    padding: 0.8rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .hoverRed {
+    transition: all 0.2s ease;
+  }
+  
+  .hoverRed:hover {
+    color: var(--sap-red) !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 280px !important;
+  }
+  
+  .logo {
+    height: 40px;
+    transition: transform 0.2s;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .navbarCustom {
+      padding: 0.5rem !important;
+    }
+    
+    .brandText {
+      font-size: 1.1rem !important;
+    }
+    
+    .content {
+      padding: 1rem;
+    }
+  }
