@@ -9,7 +9,7 @@ const InteractiveGraph = ({
   newTabUrl,
   editUrl,
 }) => {
-  // Effetto per il rendering delle formule
+  // Effetto per il rendering delle formulee
   useEffect(() => {
     const renderMathJax = () => {
       if (typeof window !== 'undefined' && window.MathJax) {
