@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
                   href="/modelli/twoconsumers_oneproducer"
                   className={`d-block rounded p-2 ${styles.hoverRed}`}
                 >
-                  2 consumer 1 producer
+                  Two consumer, One producer
                 </Link>
               </li>
             </ul>
