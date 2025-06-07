@@ -1,55 +1,194 @@
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+
+.navbarFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbarVisible {
+  transform: translateY(0);
+}
+
+.navbarHidden {
+  transform: translateY(-100%);
+}
+
+.navbarSpacer {
+  height: 76px; /* Adjust this to match your navbar height */
+}
+
+.navbarCustom {
+  padding: 1rem 1.5rem;
+  background-color: var(--sap-red) !important;
+  border-bottom: 3px solid var(--sap-red);
+}
+.menuButton {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 8px !important;
+}
+
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-1px);
+}
+
+.menuButton:focus {
+  box-shadow: none !important;
+}
+
+.brandText {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.content {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.sidebar {
+  width: 320px !important;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.sidebarHeader {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.sidebarTitle {
+  font-size: 2rem ;
+  font-weight: 800;
+  color: #2c3e50;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  letter-spacing: 0.5px;
+}
+.sidebarTitle:hover {
+  background-color: #f8f9fa;
+  color: var(--sap-red);
+  border-left-color: var(--sap-red);
+  padding-left: 1rem;
+}
+.section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1.5rem;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--sap-red);
+  margin: 0 1.5rem 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--sap-red);
+}
+
+.subsection {
+  margin-bottom: 1.5rem;
+}
+
+.subsectionTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin: 0 1.5rem 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList li {
+  margin-bottom: 0.25rem;
+}
+
+.navLink {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #495057;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  font-size: 0.95rem;
+}
+
+
+.navLink:hover {
+  background-color: #f8f9fa;
+  color: var(--sap-red);
+  border-left-color: var(--sap-red);
+  padding-left: 1.75rem;
+}
+
+.collapseButton {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1.5rem;
+  color: #565656 !important;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-left: 3px solid;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+
+.collapseButton:focus {
+  box-shadow: none;
+}
+
+.logo {
+  height: 45px;
+  transition: transform 0.2s ease;
+  filter: brightness(0) invert(1);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
   .navbarCustom {
-    padding: 0.8rem 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 0.75rem 1rem !important;
   }
   
-  .hoverRed {
-    transition: all 0.2s ease;
-  }
-  
-  .hoverRed:hover {
-    color: var(--sap-red) !important;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .brandText {
+    font-size: 1.1rem !important;
   }
   
   .content {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    width: 100%;
-  }
-  
-  .sidebar {
-    width: 280px !important;
+    padding: 1.5rem;
   }
   
   .logo {
-    height: 40px;
-    transition: transform 0.2s;
+    height: 35px;
   }
-  
-  .logo:hover {
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 768px) {
-    .navbarCustom {
-      padding: 0.5rem !important;
-    }
-    
-    .brandText {
-      font-size: 1.1rem !important;
-    }
-    
-    .content {
-      padding: 1rem;
-    }
-  }
+}

@@ -1,0 +1,103 @@
+[
+    {
+        "uuid": "edgeworth",
+        "mathFormulas": [
+            "\\[ \\Large p = \\frac{p_1}{p_2} = \\frac{a}{1-a} \\]",
+            "\\[ \\Large p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]"
+        ],
+        "title": "Edgeworth Box",
+        "description": "The Edgeworth Box is a fundamental tool in microeconomic theory for analyzing exchange between two consumers with initial endowments. This interactive model allows you to explore how equilibrium prices emerge from consumer preferences.<br/><br/><strong>Equilibrium with identical Cobb-Douglas preferences:</strong> {mathFormula1} <strong>General equilibrium with different preferences:</strong> {mathFormula2}<br/><br/><strong>How to use this interactive model:</strong><br/><ul><li>Drag the initial endowment point to see how it affects the equilibrium</li><li>Adjust the preference parameters (α and β) to explore different utility functions</li><li>Observe how the contract curve changes with different preferences</li><li>The equilibrium point shows where both consumers maximize their utility given the budget constraint</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/ziofyoyupi?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/ziofyoyupi?embed",
+        "editUrl": "https://www.desmos.com/calculator/ziofyoyupi"
+    },
+    {
+        "uuid": "robinson",
+        "mathFormulas": [
+            "\\[ \\Large \\frac{w}{p} = a \\left( \\frac{1 - B(1-a)}{aBT} \\right)^{1-a} \\]"
+        ],
+        "title": "Robinson Economy",
+        "description": "The Robinson Economy model illustrates the fundamental trade-off between leisure and consumption in a single-agent economy. This model demonstrates how an individual optimally allocates time between work and leisure to maximize utility.<br/><br/><strong>Equilibrium wage-price ratio:</strong> <br/><br/>{mathFormula1}<br/><br/><strong>Key features to explore:</strong><br/><ul><li>Adjust the technology parameter (B) to see how productivity affects the equilibrium</li><li>Change the preference parameter (a) to explore different leisure-consumption trade-offs</li><li>Observe how the production possibility frontier intersects with the indifference curve</li><li>The tangency point represents the optimal allocation of time</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/dot005ofqi?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/dot005ofqi?embed",
+        "editUrl": "https://www.desmos.com/calculator/dot005ofqi"
+    },
+    {
+        "uuid": "twoconsumers_oneproducer",
+        "mathFormulas": [
+            "\\[ \\Large \\displaystyle p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]",
+            "\\[ \\Large \\displaystyle  \\frac{w}{p} = \\lambda \\left( \\frac{T_{2}\\Bigl(1 - \\frac{a+b}{2}\\Bigr)}{1 + \\frac{1-\\lambda}{\\lambda}(a\\varepsilon_{1} + b\\varepsilon_{2})} \\right)^{\\lambda-1} \\]"
+        ],
+        "title": "Two Consumers, One Producer",
+        "description": "This advanced model combines exchange and production in a general equilibrium framework. Two consumers with different preferences interact with a producer, creating a rich economic environment.<br/><br/><strong>Equilibrium prices:</strong> <br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula1}<br/><br/><strong>Wage-price ratio with production:</strong><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Adjust consumer preferences (a, b) to see how demand affects equilibrium</li><li>Change the production technology parameter (λ) to explore different returns to scale</li><li>Modify initial endowments to understand wealth effects</li><li>Observe how the producer's profit maximization interacts with consumer utility maximization</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/5uqaldlwet?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/5uqaldlwet?embed",
+        "editUrl": "https://www.desmos.com/calculator/5uqaldlwet"
+    },
+    {
+        "uuid": "esempio_01_ump",
+        "title": "UMP Exercise 1: Cobb-Douglas",
+        "description": "Solve the Utility Maximization Problem with Cobb-Douglas preferences. This exercise demonstrates the fundamental consumer choice problem.<br/><br/><strong>Problem setup:</strong><br/>Maximize \\(U(x,y) = x^a y^{1-a}\\) subject to \\(p_x x + p_y y = I\\)<br/><br/><strong>Instructions:</strong><br/><ul><li>Adjust the preference parameter α to see how it affects the optimal bundle</li><li>Change prices to observe substitution and income effects</li><li>Modify the budget to explore how wealth changes consumption</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/3d/z1fshmiiqt?embed",
+        "newTabUrl": "https://www.desmos.com/3d/z1fshmiiqt",
+        "editUrl": "https://www.desmos.com/3d/z1fshmiiqt"
+    },
+    {
+        "uuid": "probability-distributions",
+        "mathFormulas": [
+            "\\[ \\Large f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2} \\]",
+            "\\[ \\Large f(x) = \\lambda e^{-\\lambda x} \\quad \\text{for } x \\geq 0 \\]"
+        ],
+        "title": "Probability Distributions",
+        "description": "Explore 24 of the most common probability distributions used in statistics. This interactive visualization allows you to understand the shape, parameters, and properties of each distribution.<br/><br/><strong>Example - Normal Distribution:</strong> {mathFormula1}<br/><strong>Example - Exponential Distribution:</strong> {mathFormula2}<br/><br/><strong>Features:</strong><br/><ul><li>Toggle between continuous and discrete distributions</li><li>Adjust parameters in real-time to see how they affect the distribution shape</li><li>Compare multiple distributions simultaneously</li><li>View probability density/mass functions and cumulative distribution functions</li><li>Explore special cases and limiting behaviors</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/i0gun521fp",
+        "newTabUrl": "https://www.desmos.com/calculator/i0gun521fp",
+        "editUrl": "https://www.desmos.com/calculator/i0gun521fp"
+    },
+    {
+        "uuid": "newtons-method",
+        "mathFormulas": [
+            "\\[ \\Large x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)} \\]"
+        ],
+        "title": "Newton's Method",
+        "description": "Visualize the iterative process of Newton's Method for finding roots of functions. This powerful numerical method uses tangent line approximations to converge to solutions.<br/><br/><strong>Iteration formula:</strong> {mathFormula1}<br/><br/><strong>How to use:</strong><br/><ul><li>Enter any function f(x) to find its roots</li><li>Click on the graph to set the initial guess x₀</li><li>Watch the algorithm converge step by step</li><li>Observe how the choice of initial point affects convergence</li><li>Explore cases where the method fails to converge</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/fxqvmwrwcd?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/fxqvmwrwcd?embed",
+        "editUrl": "https://www.desmos.com/calculator/fxqvmwrwcd"
+    },
+    {
+        "uuid": "taylor-series",
+        "mathFormulas": [
+            "\\[ f(x) = \\sum_{n=0}^{N} \\frac{f^{(n)}(a)}{n!}(x-a)^n \\]"
+        ],
+        "title": "Taylor Series",
+        "description": "Explore how functions can be approximated by polynomial series. This interactive tool demonstrates the power of Taylor series in approximating complex functions.<br/><br/><strong>Taylor series formula:</strong> {mathFormula1}<br/><br/><strong>Interactive features:</strong><br/><ul><li>Choose from common functions (sin, cos, exp, log, etc.)</li><li>Adjust the center point 'a' for the expansion</li><li>Control the number of terms in the approximation</li><li>See the error between the function and its Taylor approximation</li><li>Explore the radius of convergence visually</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/9a6jvz07jq?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/9a6jvz07jq?embed",
+        "editUrl": "https://www.desmos.com/calculator/9a6jvz07jq"
+    },
+    {
+        "uuid": "linear-regression-2d",
+        "mathFormulas": [
+            "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
+            "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
+        ],
+        "title": "Linear Regression 2D",
+        "description": "Understand the fundamentals of linear regression in two dimensions. This interactive model helps visualize the least squares method and regression diagnostics.<br/><br/><strong>Regression model:</strong> {mathFormula1}<br/><strong>Slope estimator:</strong> {mathFormula2}<br/><br/><strong>Features:</strong><br/><ul><li>Add data points by clicking on the graph</li><li>See the regression line update in real-time</li><li>View R-squared and other regression statistics</li><li>Explore residuals and their distribution</li><li>Toggle confidence bands and prediction intervals</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/rpwev2jzir?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/rpwev2jzir?embed",
+        "editUrl": "https://www.desmos.com/calculator/rpwev2jzir"
+    },
+    {
+        "uuid": "linear-regression-3d",
+        "mathFormulas": [
+            "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
+            "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
+        ],
+        "title": "Linear Regression 3D",
+        "description": "Extend your understanding of regression to three dimensions. This visualization shows how a plane fits through data points in 3D space.<br/><br/><strong>Multiple regression model:</strong> {mathFormula1}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Rotate the 3D view to understand the regression plane</li><li>Add data points in three-dimensional space</li><li>Observe how the plane adjusts to minimize squared residuals</li><li>Explore the geometric interpretation of multiple regression</li><li>Understand partial effects by holding one variable constant</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/3d/yugpywpbey?embed",
+        "newTabUrl": "https://www.desmos.com/3d/yugpywpbey?embed",
+        "editUrl": "https://www.desmos.com/3d/yugpywpbey"
+    }
+]

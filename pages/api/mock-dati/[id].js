@@ -1,4 +1,4 @@
-import mockData from '../../../lib/mock-db.json';
+import mockData from '../../../lib/models.json';
 
 export default function handler(req, res) {
   const { id } = req.query;  // Estrai l'id dalla query

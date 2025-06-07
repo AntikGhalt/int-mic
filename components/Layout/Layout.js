@@ -1,24 +1,43 @@
-import { useState } from 'react';
-import { Navbar, Container, Row, Col, Button, Offcanvas } from 'react-bootstrap';
-import { List } from 'react-bootstrap-icons';
+import { useState, useEffect } from 'react';
+import { Navbar, Container, Row, Col, Button, Offcanvas, Collapse } from 'react-bootstrap';
+import { List, ChevronDown, ChevronRight } from 'react-bootstrap-icons';
 import Link from 'next/link';
 import styles from './Layout.module.css';
 
 const Layout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [microExercisesOpen, setMicroExercisesOpen] = useState(false);
+  const [statExercisesOpen, setStatExercisesOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrollingUp = prevScrollPos > currentScrollPos;
+      const isAtTop = currentScrollPos < 10;
+
+      // Show navbar when scrolling up or at the top of the page
+      setVisible(isScrollingUp || isAtTop);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
     <div className={styles.container}>
-      <Navbar bg="custom-sap-red" variant="dark" className={`${styles.navbarCustom}`}>
+      <Navbar className={`${styles.navbarCustom} ${styles.navbarFixed} ${visible ? styles.navbarVisible : styles.navbarHidden} shadow-sm`}>
         <Container fluid>
           <Row className="w-100 align-items-center justify-content-between">
             <Col xs={2} className="d-flex">
               <Button
                 variant="link"
                 onClick={toggleSidebar}
-                className={`p-0 text-white ${styles.hoverRed}`}
+                className={`p-0 text-white ${styles.menuButton}`}
               >
                 <List size={28} />
               </Button>
@@ -29,14 +48,14 @@ const Layout = ({ children }) => {
                 href="/"
                 className={`text-white m-0 p-0 ${styles.brandText}`}
               >
-                Interactive Microeconomics
+                Interactive Learning with Desmos
               </Navbar.Brand>
             </Col>
 
             <Col xs={2} className="d-flex justify-content-end">
               <img
-                src="/logo_sapienza.png"
-                alt="Logo"
+                src="/logo_interactivelearning.png"
+                alt="logo"
                 className={styles.logo}
               />
             </Col>
@@ -44,80 +63,213 @@ const Layout = ({ children }) => {
         </Container>
       </Navbar>
 
+      {/* Add a spacer to prevent content jump */}
+      <div className={styles.navbarSpacer}></div>
+
       <Offcanvas
         show={sidebarOpen}
         onHide={toggleSidebar}
         placement="start"
         className={styles.sidebar}
       >
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Menu</Offcanvas.Title>
+        <Offcanvas.Header closeButton className={styles.sidebarHeader}>
+          <Offcanvas.Title className={styles.sidebarTitle}> 
+            <Link
+              href="/"
+              onClick={() => setSidebarOpen(false)}
+            >
+              Home
+            </Link> 
+          </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body className="px-3 py-4">
-          <div className="mb-4">
-            <h2 className="fs-5 text-uppercase text-muted fw-semibold mb-3 pb-1 border-bottom">
-              Microeconomia
+        <Offcanvas.Body className="px-0 py-4">
+          {/* Microeconomics Section */}
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>
+              Microeconomics
             </h2>
-            <ul className="list-unstyled">
-              <li className="text-muted fst-italic">(empty)</li>
-            </ul>
-          </div>
-
-          <div className="mb-4">
-            <h2 className="fs-5 text-uppercase text-muted fw-semibold mb-3 pb-1 border-bottom">
-              Microeconomia Avanzata
-            </h2>
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <Link
-                  href="/modelli/edgeworth"
-                  className={`d-block rounded p-2 ${styles.hoverRed}`}
-                >
-                  Edgeworth
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href="/modelli/robinson"
-                  className={`d-block rounded p-2 ${styles.hoverRed}`}
-                >
-                  Robinson Economy
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  href="/modelli/twoconsumers_oneproducer"
-                  className={`d-block rounded p-2 ${styles.hoverRed}`}
-                >
-                  Two consumer, One producer
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mb-4">
-            <h3 className="fs-5 text-uppercase text-muted fw-semibold mb-3 pb-1 border-bottom">
-              Esercizi
-            </h3>
-            <ul className="list-unstyled">
-              {[...Array(6)].map((_, i) => (
-                <li key={i} className="mb-2">
+            
+            <div className={styles.subsection}>
+              <h3 className={styles.subsectionTitle}>Theory Models</h3>
+              <ul className={styles.navList}>
+                <li>
                   <Link
-                    href={`/modelli/esempio_0${i + 1}_ump`}
-                    className={`d-block rounded p-2 ${styles.hoverRed}`}
+                    href="/modelli/edgeworth"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
                   >
-                    {[
-                      "UMP ES1 Cobb-Douglas",
-                      "UMP ES2 Corn. Solution",
-                      "UMP ES3 Perf. Compl.",
-                      "EMP ES1 Cobb-Douglas",
-                      "UMP CES",
-                      "EMP CES",
-                    ][i]}
+                    Edgeworth Box
                   </Link>
                 </li>
-              ))}
-            </ul>
+                <li>
+                  <Link
+                    href="/modelli/robinson"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Robinson Economy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/modelli/twoconsumers_oneproducer"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Two Consumers, One Producer
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.subsection}>
+              <Button
+                variant="link"
+                className={styles.collapseButton}
+                onClick={() => setMicroExercisesOpen(!microExercisesOpen)}
+                aria-expanded={microExercisesOpen}
+              >
+                <span className="d-flex align-items-center">
+                  {microExercisesOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  <span className="ms-2">Examples</span>
+                </span>
+              </Button>
+              <Collapse in={microExercisesOpen}>
+                <ul className={styles.navList}>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_01_ump"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      UMP ES1: Cobb-Douglas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_02_ump"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      UMP ES2: Corner Solution
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_03_ump"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      UMP ES3: Perfect Complements
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_04_emp"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      EMP ES1: Cobb-Douglas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_05_ump_ces"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      UMP CES
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modelli/esempio_06_emp_ces"
+                      className={styles.navLink}
+                      onClick={() => setSidebarOpen(false)}
+                    >
+                      EMP CES
+                    </Link>
+                  </li>
+                </ul>
+              </Collapse>
+            </div>
+          </div>
+
+          {/* Statistics Section */}
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>
+              Statistics
+            </h2>
+            
+            <div className={styles.subsection}>
+              <h3 className={styles.subsectionTitle}>Theory Models</h3>
+              <ul className={styles.navList}>
+                <li>
+                  <Link
+                    href="/statistics/probability-distributions"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Probability Distributions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/statistics/newtons-method"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Newton's Method
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/statistics/taylor-series"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Taylor Series
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/statistics/linear-regression-2d"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Linear Regression 2D
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/statistics/linear-regression-3d"
+                    className={styles.navLink}
+                    onClick={() => setSidebarOpen(false)}
+                  >
+                    Linear Regression 3D
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.subsection}>
+              <Button
+                variant="link"
+                className={styles.collapseButton}
+                onClick={() => setStatExercisesOpen(!statExercisesOpen)}
+                aria-expanded={statExercisesOpen}
+              >
+                <span className="d-flex align-items-center">
+                  {statExercisesOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  <span className="ms-2">Examples</span>
+                </span>
+              </Button>
+              <Collapse in={statExercisesOpen}>
+                <ul className={styles.navList}>
+                  <li className="text-muted fst-italic ps-3">(Coming soon)</li>
+                </ul>
+              </Collapse>
+            </div>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
