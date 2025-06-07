@@ -7,9 +7,9 @@
         ],
         "title": "Edgeworth Box",
         "description": "The Edgeworth Box is a fundamental tool in microeconomic theory for analyzing exchange between two consumers with initial endowments. This interactive model allows you to explore how equilibrium prices emerge from consumer preferences.<br/><br/><strong>Equilibrium with identical Cobb-Douglas preferences:</strong> {mathFormula1} <strong>General equilibrium with different preferences:</strong> {mathFormula2}<br/><br/><strong>How to use this interactive model:</strong><br/><ul><li>Drag the initial endowment point to see how it affects the equilibrium</li><li>Adjust the preference parameters (α and β) to explore different utility functions</li><li>Observe how the contract curve changes with different preferences</li><li>The equilibrium point shows where both consumers maximize their utility given the budget constraint</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/ziofyoyupi?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/ziofyoyupi?embed",
-        "editUrl": "https://www.desmos.com/calculator/ziofyoyupi"
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/jmzsqgjqrs?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/jmzsqgjqrs?embed",
+        "editUrl": "https://www.desmos.com/calculator/w7yabj31am"
     },
     {
         "uuid": "robinson",
@@ -18,9 +18,9 @@
         ],
         "title": "Robinson Economy",
         "description": "The Robinson Economy model illustrates the fundamental trade-off between leisure and consumption in a single-agent economy. This model demonstrates how an individual optimally allocates time between work and leisure to maximize utility.<br/><br/><strong>Equilibrium wage-price ratio:</strong> <br/><br/>{mathFormula1}<br/><br/><strong>Key features to explore:</strong><br/><ul><li>Adjust the technology parameter (B) to see how productivity affects the equilibrium</li><li>Change the preference parameter (a) to explore different leisure-consumption trade-offs</li><li>Observe how the production possibility frontier intersects with the indifference curve</li><li>The tangency point represents the optimal allocation of time</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/dot005ofqi?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/dot005ofqi?embed",
-        "editUrl": "https://www.desmos.com/calculator/dot005ofqi"
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/6z01oi9p4b?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/6z01oi9p4b?embed",
+        "editUrl": "https://www.desmos.com/calculator/zwgtbtdexb"
     },
     {
         "uuid": "twoconsumers_oneproducer",
@@ -28,20 +28,81 @@
             "\\[ \\Large \\displaystyle p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]",
             "\\[ \\Large \\displaystyle  \\frac{w}{p} = \\lambda \\left( \\frac{T_{2}\\Bigl(1 - \\frac{a+b}{2}\\Bigr)}{1 + \\frac{1-\\lambda}{\\lambda}(a\\varepsilon_{1} + b\\varepsilon_{2})} \\right)^{\\lambda-1} \\]"
         ],
-        "title": "Two Consumers, One Producer",
-        "description": "This advanced model combines exchange and production in a general equilibrium framework. Two consumers with different preferences interact with a producer, creating a rich economic environment.<br/><br/><strong>Equilibrium prices:</strong> <br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula1}<br/><br/><strong>Wage-price ratio with production:</strong><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Adjust consumer preferences (a, b) to see how demand affects equilibrium</li><li>Change the production technology parameter (λ) to explore different returns to scale</li><li>Modify initial endowments to understand wealth effects</li><li>Observe how the producer's profit maximization interacts with consumer utility maximization</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/5uqaldlwet?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/5uqaldlwet?embed",
-        "editUrl": "https://www.desmos.com/calculator/5uqaldlwet"
+        "title": "Two Consumers and shareholders, one Producer ",
+        "description": "This advanced model combines exchange and production in a general equilibrium framework. Two consumers with different preferences interact with a producer, creating a rich economic environment.<br/><br/><strong>Equilibrium prices:</strong> <br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula1}<br/><br/><strong>Wage-price ratio with production:</strong><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Adjust consumer preferences (a, b) to see how demand affects equilibrium</li><li>Click on 'Switch Prod. on' to add the production to the model </li><li>Change the production technology parameter (λ) to explore different returns to scale</li><li>Modify initial endowments to understand wealth effects</li><li>Observe how the producer's profit maximization interacts with consumer utility maximization</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/bgwcrcid5v?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/bgwcrcid5v?embed",
+        "editUrl": "https://www.desmos.com/calculator/bgwcrcid5v"
     },
     {
         "uuid": "esempio_01_ump",
         "title": "UMP Exercise 1: Cobb-Douglas",
-        "description": "Solve the Utility Maximization Problem with Cobb-Douglas preferences. This exercise demonstrates the fundamental consumer choice problem.<br/><br/><strong>Problem setup:</strong><br/>Maximize \\(U(x,y) = x^a y^{1-a}\\) subject to \\(p_x x + p_y y = I\\)<br/><br/><strong>Instructions:</strong><br/><ul><li>Adjust the preference parameter α to see how it affects the optimal bundle</li><li>Change prices to observe substitution and income effects</li><li>Modify the budget to explore how wealth changes consumption</li></ul>",
+        "description": "Solve the Utility Maximization Problem with Cobb-Douglas preferences. This exercise demonstrates the fundamental consumer choice problem.<br/><br/><strong>Problem setup:</strong><br/>Maximize \\(U(x,y) = x^a y^{1-a}\\) subject to \\(p_x x + p_y y = I\\)<br/><br/><strong>Solution:</strong><br/>\\(x^* = \\frac{a \\cdot I}{p_x}\\) and \\(y^* = \\frac{(1-a) \\cdot I}{p_y}\\)<br/><br/><strong>Instructions:</strong><br/><ul><li>Adjust the preference parameter α to see how it affects the optimal bundle</li><li>Change prices to observe substitution and income effects</li><li>Modify the budget to explore how wealth changes consumption</li></ul>",
         "defaultEmbedUrl": "https://www.desmos.com/3d/z1fshmiiqt?embed",
         "newTabUrl": "https://www.desmos.com/3d/z1fshmiiqt",
         "editUrl": "https://www.desmos.com/3d/z1fshmiiqt"
     },
+    {
+        "uuid": "esempio_02_ump",
+        "mathFormulas": [
+            "\\[ x^* = \\begin{cases} \\frac{I}{p_x} & \\text{if } \\frac{MU_x}{p_x} > \\frac{MU_y}{p_y} \\text{ at } y=0 \\\\ 0 & \\text{if } \\frac{MU_x}{p_x} < \\frac{MU_y}{p_y} \\text{ at } x=0 \\end{cases} \\]"
+        ],
+        "title": "UMP Exercise 2: Corner Solution",
+        "description": "Explore corner solutions in utility maximization when the marginal rate of substitution exceeds the price ratio at the boundaries.<br/><br/><strong>Problem setup:</strong><br/>When preferences are such that \\(MRS > \\frac{p_x}{p_y}\\) even at extreme consumption bundles, the consumer specializes in one good.<br/><br/><strong>Corner solution conditions:</strong><br/>{mathFormula1}<br/><br/><strong>Key concepts:</strong><br/><ul><li>Observe when interior solutions fail to exist</li><li>Understand boundary behavior of indifference curves</li><li>Explore cases with perfect substitutes or strong preferences</li><li>See how price ratios determine which corner is optimal</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/corner-solution-example?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/corner-solution-example",
+        "editUrl": "https://www.desmos.com/calculator/corner-solution-example"
+    },
+    {
+        "uuid": "esempio_03_ump",
+        "mathFormulas": [
+            "\\[ U(x,y) = \\min\\{ax, by\\} \\]",
+            "\\[ x^* = \\frac{I}{p_x + p_y \\frac{a}{b}}, \\quad y^* = \\frac{a}{b} \\cdot x^* \\]"
+        ],
+        "title": "UMP Exercise 3: Perfect Complements",
+        "description": "Analyze utility maximization with Leontief (perfect complements) preferences, where goods must be consumed in fixed proportions.<br/><br/><strong>Utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Optimal consumption bundle:</strong><br/>{mathFormula2}<br/><br/><strong>Features to explore:</strong><br/><ul><li>L-shaped indifference curves representing fixed consumption ratios</li><li>The optimal bundle always lies at the 'kink' of the indifference curve</li><li>Price changes lead to pure income effects (no substitution)</li><li>Adjust the complementarity ratio a/b to see different optimal proportions</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/perfect-complements-ump?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/perfect-complements-ump",
+        "editUrl": "https://www.desmos.com/calculator/perfect-complements-ump"
+    },
+    {
+        "uuid": "esempio_04_emp",
+        "mathFormulas": [
+            "\\[ \\min_{x,y} \\: p_x x + p_y y \\quad \\text{s.t.} \\quad x^a y^{1-a} \\geq \\bar{U} \\]",
+            "\\[ \\frac{x^*}{y^*} = \\frac{a}{1-a} \\cdot \\frac{p_y}{p_x} \\]"
+        ],
+        "title": "EMP Exercise 1: Cobb-Douglas",
+        "description": "Solve the Expenditure Minimization Problem with Cobb-Douglas preferences. Find the cheapest way to achieve a given utility level.<br/><br/><strong>Problem formulation:</strong><br/>{mathFormula1}<br/><br/><strong>Cost-minimizing ratio:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Set the target utility level \\(\\bar{U}\\) and observe the minimum cost</li><li>Change prices to see how the optimal bundle adjusts</li><li>Compare with the dual UMP problem</li><li>Explore the expenditure function \\(e(p_x, p_y, \\bar{U})\\)</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/emp-cobb-douglas?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/emp-cobb-douglas",
+        "editUrl": "https://www.desmos.com/calculator/emp-cobb-douglas"
+    },
+    {
+        "uuid": "esempio_05_ump_ces",
+        "mathFormulas": [
+            "\\[ U(x,y) = (ax^\\rho + by^\\rho)^{1/\\rho} \\]",
+            "\\[ \\sigma = \\frac{1}{1-\\rho} \\]",
+            "\\[ \\frac{x^*}{y^*} = \\left(\\frac{a}{b} \\cdot \\frac{p_y}{p_x}\\right)^\\sigma \\]"
+        ],
+        "title": "UMP Exercise 5: CES Utility",
+        "description": "Explore the Constant Elasticity of Substitution (CES) utility function, a flexible form that nests multiple preference types.<br/><br/><strong>CES utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Elasticity of substitution:</strong><br/>{mathFormula2}<br/><br/><strong>Optimal consumption ratio:</strong><br/>{mathFormula3}<br/><br/><strong>Special cases to explore:</strong><br/><ul><li>ρ → 1: Perfect substitutes (σ → ∞)</li><li>ρ → 0: Cobb-Douglas (σ = 1)</li><li>ρ → -∞: Perfect complements (σ → 0)</li><li>Adjust ρ to see how substitutability affects optimal choices</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/ump-ces-function?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/ump-ces-function",
+        "editUrl": "https://www.desmos.com/calculator/ump-ces-function"
+    },
+    {
+        "uuid": "esempio_06_emp_ces",
+        "mathFormulas": [
+            "\\[ h(p_x, p_y, \\bar{U}) = \\arg\\min_{x,y} \\{p_x x + p_y y : (ax^\\rho + by^\\rho)^{1/\\rho} \\geq \\bar{U}\\} \\]",
+            "\\[ e(p_x, p_y, \\bar{U}) = \\bar{U} \\cdot \\left(a^\\sigma p_x^{1-\\sigma} + b^\\sigma p_y^{1-\\sigma}\\right)^{\\frac{1}{1-\\sigma}} \\]"
+        ],
+        "title": "EMP Exercise 6: CES Expenditure",
+        "description": "Solve the Expenditure Minimization Problem with CES preferences, exploring how the elasticity of substitution affects cost-minimizing behavior.<br/><br/><strong>Hicksian demand:</strong><br/>{mathFormula1}<br/><br/><strong>Expenditure function:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive analysis:</strong><br/><ul><li>Vary the elasticity parameter to see how it affects expenditure</li><li>Compare expenditure functions across different utility specifications</li><li>Observe how Hicksian demands respond to price changes</li><li>Explore the duality between UMP and EMP in the CES framework</li></ul>",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/emp-ces-expenditure?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/emp-ces-expenditure",
+        "editUrl": "https://www.desmos.com/calculator/emp-ces-expenditure"
+    },
+    
     {
         "uuid": "probability-distributions",
         "mathFormulas": [
@@ -61,8 +122,8 @@
         ],
         "title": "Newton's Method",
         "description": "Visualize the iterative process of Newton's Method for finding roots of functions. This powerful numerical method uses tangent line approximations to converge to solutions.<br/><br/><strong>Iteration formula:</strong> {mathFormula1}<br/><br/><strong>How to use:</strong><br/><ul><li>Enter any function f(x) to find its roots</li><li>Click on the graph to set the initial guess x₀</li><li>Watch the algorithm converge step by step</li><li>Observe how the choice of initial point affects convergence</li><li>Explore cases where the method fails to converge</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/fxqvmwrwcd?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/fxqvmwrwcd?embed",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/06cm4tna3j?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/06cm4tna3j?embed",
         "editUrl": "https://www.desmos.com/calculator/fxqvmwrwcd"
     },
     {
@@ -82,11 +143,11 @@
             "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
             "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
         ],
-        "title": "Linear Regression 2D",
-        "description": "Understand the fundamentals of linear regression in two dimensions. This interactive model helps visualize the least squares method and regression diagnostics.<br/><br/><strong>Regression model:</strong> {mathFormula1}<br/><strong>Slope estimator:</strong> {mathFormula2}<br/><br/><strong>Features:</strong><br/><ul><li>Add data points by clicking on the graph</li><li>See the regression line update in real-time</li><li>View R-squared and other regression statistics</li><li>Explore residuals and their distribution</li><li>Toggle confidence bands and prediction intervals</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/rpwev2jzir?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/rpwev2jzir?embed",
-        "editUrl": "https://www.desmos.com/calculator/rpwev2jzir"
+        "title": "Linear Regression, 2D",
+        "description": "Understand the fundamentals of linear regression in two dimensions. This interactive model helps visualize the least squares method and regression diagnostics.<br/><br/><strong>Regression model:</strong> {mathFormula1}<br/><strong>Slope estimator:</strong> {mathFormula2}<br/><br/><strong>Features:</strong><br/><ul><li>(in progress...)",
+        "defaultEmbedUrl": "https://www.desmos.com/calculator/8qm9hpuhxs?embed",
+        "newTabUrl": "https://www.desmos.com/calculator/8qm9hpuhxs?embed",
+        "editUrl": "https://www.desmos.com/calculator/8qm9hpuhxs"
     },
     {
         "uuid": "linear-regression-3d",
@@ -94,7 +155,7 @@
             "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
             "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
         ],
-        "title": "Linear Regression 3D",
+        "title": "Linear Regression, 3D",
         "description": "Extend your understanding of regression to three dimensions. This visualization shows how a plane fits through data points in 3D space.<br/><br/><strong>Multiple regression model:</strong> {mathFormula1}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Rotate the 3D view to understand the regression plane</li><li>Add data points in three-dimensional space</li><li>Observe how the plane adjusts to minimize squared residuals</li><li>Explore the geometric interpretation of multiple regression</li><li>Understand partial effects by holding one variable constant</li></ul>",
         "defaultEmbedUrl": "https://www.desmos.com/3d/yugpywpbey?embed",
         "newTabUrl": "https://www.desmos.com/3d/yugpywpbey?embed",

@@ -90,7 +90,7 @@ const Layout = ({ children }) => {
             </h2>
             
             <div className={styles.subsection}>
-              <h3 className={styles.subsectionTitle}>Theory Models</h3>
+              
               <ul className={styles.navList}>
                 <li>
                   <Link
@@ -202,7 +202,7 @@ const Layout = ({ children }) => {
             </h2>
             
             <div className={styles.subsection}>
-              <h3 className={styles.subsectionTitle}>Theory Models</h3>
+              
               <ul className={styles.navList}>
                 <li>
                   <Link

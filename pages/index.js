@@ -4,22 +4,22 @@ const Home = () => {
   const mathFormula = "\\(\\displaystyle (x - h)^2 + (y - k)^2 = r^2\\)"; // Formula matematica
 
   const description = `
-    Spiegazione funzionamento di Desmos. <br/><br/>
-    Formula circonferenza: <br/><br/>  
+    Explanation of how Desmos works. <br/><br/>
+    Circle formula: <br/><br/>
     ${mathFormula}<br/><br/>
-    Interazione con grafico interattivo <br/><br/>
+    Interaction with the interactive graph <br/><br/>
     <ul>
-      <li>Premere il tasto 'Shadows on' per mostrare l'area del cerchio </li>
-      <li>Trascinare 'Radius' per cambiare la dimensione del raggio </li>
-      <li>Trascinare 'Drag' per cambiare la posizione della figura </li>
-      <li>Cambiare il valore dell'esponente della formula per ottenere trasformare il cerchio in un quadrato</li>
+      <li>Press the 'Shadows on' button to show the area of the circle</li>
+      <li>Drag the 'Radius' slider to change the radius size</li>
+      <li>Drag the 'Drag' point to change the figure's position</li>
+      <li>Change the value of the formula's exponent to transform the circle into a square</li>
     </ul>
   `;
 
   return (
     <div>
       <InteractiveGraph
-        title="Home"
+        title="Home - example"
         description={description}
         defaultEmbedUrl="https://www.desmos.com/calculator/ud7jgofu04?embed"
         newTabUrl="https://www.desmos.com/calculator/ud7jgofu04?embed"

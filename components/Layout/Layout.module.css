@@ -84,7 +84,7 @@
   background-color: #f8f9fa;
   color: var(--sap-red);
   border-left-color: var(--sap-red);
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 .section {
   margin-bottom: 2rem;
