@@ -12,6 +12,7 @@
   right: 0;
   z-index: 1030;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .navbarVisible {
@@ -23,7 +24,7 @@
 }
 
 .navbarSpacer {
-  height: 76px; /* Adjust this to match your navbar height */
+  height: 0px; /* Adjust this to match your navbar height */
 }
 
 .navbarCustom {

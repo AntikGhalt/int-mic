@@ -25,11 +25,11 @@
     {
         "uuid": "twoconsumers_oneproducer",
         "mathFormulas": [
-            "\\[ \\Large \\displaystyle p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]",
-            "\\[ \\Large \\displaystyle  \\frac{w}{p} = \\lambda \\left( \\frac{T_{2}\\Bigl(1 - \\frac{a+b}{2}\\Bigr)}{1 + \\frac{1-\\lambda}{\\lambda}(a\\varepsilon_{1} + b\\varepsilon_{2})} \\right)^{\\lambda-1} \\]"
+            "\\[ \\Large p = \\frac{p_1}{p_2} = \\frac{a \\omega_{21} + b \\omega_{22}}{(1-a)\\omega_{11} + (1-b)\\omega_{12}} \\]",
+            "\\[ \\Large \\frac{w}{p} = \\lambda \\left( \\frac{T_{2}\\left(1 - \\frac{a+b}{2}\\right)}{1 + \\frac{1-\\lambda}{\\lambda}(a\\varepsilon_{1} + b\\varepsilon_{2})} \\right)^{\\lambda-1} \\]"
         ],
-        "title": "Two Consumers and shareholders, one Producer ",
-        "description": "This advanced model combines exchange and production in a general equilibrium framework. Two consumers with different preferences interact with a producer, creating a rich economic environment.<br/><br/><strong>Equilibrium prices:</strong> <br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula1}<br/><br/><strong>Wage-price ratio with production:</strong><br/><br/> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Adjust consumer preferences (a, b) to see how demand affects equilibrium</li><li>Click on 'Switch Prod. on' to add the production to the model </li><li>Change the production technology parameter (λ) to explore different returns to scale</li><li>Modify initial endowments to understand wealth effects</li><li>Observe how the producer's profit maximization interacts with consumer utility maximization</li></ul>",
+        "title": "Two Consumers and Shareholders, One Producer",
+        "description": "This advanced model combines exchange and production in a general equilibrium framework. Two consumers with different preferences interact with a producer, creating a rich economic environment.<br/><br/><strong>Equilibrium prices:</strong><br/>{mathFormula1}<br/><br/><strong>Wage-price ratio with production:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Adjust consumer preferences (a, b) to see how demand affects equilibrium</li><li>Click on 'Switch Prod. on' to add production to the model</li><li>Change the production technology parameter (λ) to explore different returns to scale</li><li>Modify initial endowments to understand wealth effects</li><li>Observe how the producer's profit maximization interacts with consumer utility maximization</li></ul>",
         "defaultEmbedUrl": "https://www.desmos.com/calculator/bgwcrcid5v?embed",
         "newTabUrl": "https://www.desmos.com/calculator/bgwcrcid5v?embed",
         "editUrl": "https://www.desmos.com/calculator/bgwcrcid5v"
@@ -45,7 +45,7 @@
     {
         "uuid": "esempio_02_ump",
         "mathFormulas": [
-            "\\[ x^* = \\begin{cases} \\frac{I}{p_x} & \\text{if } \\frac{MU_x}{p_x} > \\frac{MU_y}{p_y} \\text{ at } y=0 \\\\ 0 & \\text{if } \\frac{MU_x}{p_x} < \\frac{MU_y}{p_y} \\text{ at } x=0 \\end{cases} \\]"
+            "\\[ \\Large x^* = \\begin{cases} \\frac{I}{p_x} & \\text{if } \\frac{MU_x}{p_x} > \\frac{MU_y}{p_y} \\text{ at } y=0 \\\\ 0 & \\text{if } \\frac{MU_x}{p_x} < \\frac{MU_y}{p_y} \\text{ at } x=0 \\end{cases} \\]"
         ],
         "title": "UMP Exercise 2: Corner Solution",
         "description": "Explore corner solutions in utility maximization when the marginal rate of substitution exceeds the price ratio at the boundaries.<br/><br/><strong>Problem setup:</strong><br/>When preferences are such that \\(MRS > \\frac{p_x}{p_y}\\) even at extreme consumption bundles, the consumer specializes in one good.<br/><br/><strong>Corner solution conditions:</strong><br/>{mathFormula1}<br/><br/><strong>Key concepts:</strong><br/><ul><li>Observe when interior solutions fail to exist</li><li>Understand boundary behavior of indifference curves</li><li>Explore cases with perfect substitutes or strong preferences</li><li>See how price ratios determine which corner is optimal</li></ul>",
@@ -56,8 +56,8 @@
     {
         "uuid": "esempio_03_ump",
         "mathFormulas": [
-            "\\[ U(x,y) = \\min\\{ax, by\\} \\]",
-            "\\[ x^* = \\frac{I}{p_x + p_y \\frac{a}{b}}, \\quad y^* = \\frac{a}{b} \\cdot x^* \\]"
+            "\\[ \\Large U(x,y) = \\min\\{ax, by\\} \\]",
+            "\\[ \\Large x^* = \\frac{I}{p_x + p_y \\frac{a}{b}}, \\quad y^* = \\frac{a}{b} \\cdot x^* \\]"
         ],
         "title": "UMP Exercise 3: Perfect Complements",
         "description": "Analyze utility maximization with Leontief (perfect complements) preferences, where goods must be consumed in fixed proportions.<br/><br/><strong>Utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Optimal consumption bundle:</strong><br/>{mathFormula2}<br/><br/><strong>Features to explore:</strong><br/><ul><li>L-shaped indifference curves representing fixed consumption ratios</li><li>The optimal bundle always lies at the 'kink' of the indifference curve</li><li>Price changes lead to pure income effects (no substitution)</li><li>Adjust the complementarity ratio a/b to see different optimal proportions</li></ul>",
@@ -68,8 +68,8 @@
     {
         "uuid": "esempio_04_emp",
         "mathFormulas": [
-            "\\[ \\min_{x,y} \\: p_x x + p_y y \\quad \\text{s.t.} \\quad x^a y^{1-a} \\geq \\bar{U} \\]",
-            "\\[ \\frac{x^*}{y^*} = \\frac{a}{1-a} \\cdot \\frac{p_y}{p_x} \\]"
+            "\\[ \\Large \\min_{x,y} \\: p_x x + p_y y \\quad \\text{s.t.} \\quad x^a y^{1-a} \\geq \\bar{U} \\]",
+            "\\[ \\Large \\frac{x^*}{y^*} = \\frac{a}{1-a} \\cdot \\frac{p_y}{p_x} \\]"
         ],
         "title": "EMP Exercise 1: Cobb-Douglas",
         "description": "Solve the Expenditure Minimization Problem with Cobb-Douglas preferences. Find the cheapest way to achieve a given utility level.<br/><br/><strong>Problem formulation:</strong><br/>{mathFormula1}<br/><br/><strong>Cost-minimizing ratio:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Set the target utility level \\(\\bar{U}\\) and observe the minimum cost</li><li>Change prices to see how the optimal bundle adjusts</li><li>Compare with the dual UMP problem</li><li>Explore the expenditure function \\(e(p_x, p_y, \\bar{U})\\)</li></ul>",
@@ -80,9 +80,9 @@
     {
         "uuid": "esempio_05_ump_ces",
         "mathFormulas": [
-            "\\[ U(x,y) = (ax^\\rho + by^\\rho)^{1/\\rho} \\]",
-            "\\[ \\sigma = \\frac{1}{1-\\rho} \\]",
-            "\\[ \\frac{x^*}{y^*} = \\left(\\frac{a}{b} \\cdot \\frac{p_y}{p_x}\\right)^\\sigma \\]"
+            "\\[ \\Large U(x,y) = (ax^\\rho + by^\\rho)^{1/\\rho} \\]",
+            "\\[ \\Large \\sigma = \\frac{1}{1-\\rho} \\]",
+            "\\[ \\Large \\frac{x^*}{y^*} = \\left(\\frac{a}{b} \\cdot \\frac{p_y}{p_x}\\right)^\\sigma \\]"
         ],
         "title": "UMP Exercise 5: CES Utility",
         "description": "Explore the Constant Elasticity of Substitution (CES) utility function, a flexible form that nests multiple preference types.<br/><br/><strong>CES utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Elasticity of substitution:</strong><br/>{mathFormula2}<br/><br/><strong>Optimal consumption ratio:</strong><br/>{mathFormula3}<br/><br/><strong>Special cases to explore:</strong><br/><ul><li>ρ → 1: Perfect substitutes (σ → ∞)</li><li>ρ → 0: Cobb-Douglas (σ = 1)</li><li>ρ → -∞: Perfect complements (σ → 0)</li><li>Adjust ρ to see how substitutability affects optimal choices</li></ul>",
@@ -93,8 +93,8 @@
     {
         "uuid": "esempio_06_emp_ces",
         "mathFormulas": [
-            "\\[ h(p_x, p_y, \\bar{U}) = \\arg\\min_{x,y} \\{p_x x + p_y y : (ax^\\rho + by^\\rho)^{1/\\rho} \\geq \\bar{U}\\} \\]",
-            "\\[ e(p_x, p_y, \\bar{U}) = \\bar{U} \\cdot \\left(a^\\sigma p_x^{1-\\sigma} + b^\\sigma p_y^{1-\\sigma}\\right)^{\\frac{1}{1-\\sigma}} \\]"
+            "\\[ \\Large h(p_x, p_y, \\bar{U}) = \\arg\\min_{x,y} \\{p_x x + p_y y : (ax^\\rho + by^\\rho)^{1/\\rho} \\geq \\bar{U}\\} \\]",
+            "\\[ \\Large e(p_x, p_y, \\bar{U}) = \\bar{U} \\cdot \\left(a^\\sigma p_x^{1-\\sigma} + b^\\sigma p_y^{1-\\sigma}\\right)^{\\frac{1}{1-\\sigma}} \\]"
         ],
         "title": "EMP Exercise 6: CES Expenditure",
         "description": "Solve the Expenditure Minimization Problem with CES preferences, exploring how the elasticity of substitution affects cost-minimizing behavior.<br/><br/><strong>Hicksian demand:</strong><br/>{mathFormula1}<br/><br/><strong>Expenditure function:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive analysis:</strong><br/><ul><li>Vary the elasticity parameter to see how it affects expenditure</li><li>Compare expenditure functions across different utility specifications</li><li>Observe how Hicksian demands respond to price changes</li><li>Explore the duality between UMP and EMP in the CES framework</li></ul>",
@@ -106,7 +106,7 @@
     {
         "uuid": "probability-distributions",
         "mathFormulas": [
-            "\\[ \\Large f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2} \\]",
+            "\\[  \\Large f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2} \\]",
             "\\[ \\Large f(x) = \\lambda e^{-\\lambda x} \\quad \\text{for } x \\geq 0 \\]"
         ],
         "title": "Probability Distributions",
@@ -129,7 +129,7 @@
     {
         "uuid": "taylor-series",
         "mathFormulas": [
-            "\\[ f(x) = \\sum_{n=0}^{N} \\frac{f^{(n)}(a)}{n!}(x-a)^n \\]"
+            "\\[ \\Large f(x) = \\sum_{n=0}^{N} \\frac{f^{(n)}(a)}{n!}(x-a)^n \\]"
         ],
         "title": "Taylor Series",
         "description": "Explore how functions can be approximated by polynomial series. This interactive tool demonstrates the power of Taylor series in approximating complex functions.<br/><br/><strong>Taylor series formula:</strong> {mathFormula1}<br/><br/><strong>Interactive features:</strong><br/><ul><li>Choose from common functions (sin, cos, exp, log, etc.)</li><li>Adjust the center point 'a' for the expansion</li><li>Control the number of terms in the approximation</li><li>See the error between the function and its Taylor approximation</li><li>Explore the radius of convergence visually</li></ul>",
@@ -140,8 +140,8 @@
     {
         "uuid": "linear-regression-2d",
         "mathFormulas": [
-            "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
-            "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
+            "\\[ \\Large y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
+            "\\[ \\Large \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
         ],
         "title": "Linear Regression, 2D",
         "description": "Understand the fundamentals of linear regression in two dimensions. This interactive model helps visualize the least squares method and regression diagnostics.<br/><br/><strong>Regression model:</strong> {mathFormula1}<br/><strong>Slope estimator:</strong> {mathFormula2}<br/><br/><strong>Features:</strong><br/><ul><li>(in progress...)",
@@ -152,8 +152,8 @@
     {
         "uuid": "linear-regression-3d",
         "mathFormulas": [
-            "\\[ y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
-            "\\[ \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
+            "\\[ \\Large y = \\beta_0 + \\beta_1 x + \\epsilon \\]",
+            "\\[ \\Large \\hat{\\beta}_1 = \\frac{\\sum_{i=1}^n (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^n (x_i - \\bar{x})^2} \\]"
         ],
         "title": "Linear Regression, 3D",
         "description": "Extend your understanding of regression to three dimensions. This visualization shows how a plane fits through data points in 3D space.<br/><br/><strong>Multiple regression model:</strong> {mathFormula1}<br/><br/><strong>Interactive elements:</strong><br/><ul><li>Rotate the 3D view to understand the regression plane</li><li>Add data points in three-dimensional space</li><li>Observe how the plane adjusts to minimize squared residuals</li><li>Explore the geometric interpretation of multiple regression</li><li>Understand partial effects by holding one variable constant</li></ul>",

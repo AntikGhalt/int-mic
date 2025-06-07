@@ -1,5 +1,15 @@
+// components/Layout/Layout.js
+
 import { useState, useEffect } from 'react';
-import { Navbar, Container, Row, Col, Button, Offcanvas, Collapse } from 'react-bootstrap';
+import {
+  Navbar,
+  Container,
+  Row,
+  Col,
+  Button,
+  Offcanvas,
+  Collapse
+} from 'react-bootstrap';
 import { List, ChevronDown, ChevronRight } from 'react-bootstrap-icons';
 import Link from 'next/link';
 import styles from './Layout.module.css';
@@ -8,18 +18,22 @@ const Layout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [microExercisesOpen, setMicroExercisesOpen] = useState(false);
   const [statExercisesOpen, setStatExercisesOpen] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  // ← Initialize to the current scroll position (avoids a jump on first scroll)
+  const [prevScrollPos, setPrevScrollPos] = useState(
+    typeof window !== 'undefined' ? window.pageYOffset : 0
+  );
   const [visible, setVisible] = useState(true);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      const isScrollingUp = prevScrollPos > currentScrollPos;
-      const isAtTop = currentScrollPos < 10;
+      const currentScrollPos = window.pageYOffset;
+      const isScrollingUp   = currentScrollPos < prevScrollPos;
+      const isAtTop         = currentScrollPos <= 0;
 
-      // Show navbar when scrolling up or at the top of the page
+      // Show navbar when scrolling up or at the very top
       setVisible(isScrollingUp || isAtTop);
       setPrevScrollPos(currentScrollPos);
     };
@@ -30,7 +44,14 @@ const Layout = ({ children }) => {
 
   return (
     <div className={styles.container}>
-      <Navbar className={`${styles.navbarCustom} ${styles.navbarFixed} ${visible ? styles.navbarVisible : styles.navbarHidden} shadow-sm`}>
+      <Navbar
+        className={[
+          styles.navbarCustom,
+          styles.navbarFixed,
+          visible ? styles.navbarVisible : styles.navbarHidden,
+          'shadow-sm'
+        ].join(' ')}
+      >
         <Container fluid>
           <Row className="w-100 align-items-center justify-content-between">
             <Col xs={2} className="d-flex">
@@ -63,8 +84,8 @@ const Layout = ({ children }) => {
         </Container>
       </Navbar>
 
-      {/* Add a spacer to prevent content jump */}
-      <div className={styles.navbarSpacer}></div>
+      {/* spacer to prevent content jump */}
+      <div className={styles.navbarSpacer} />
 
       <Offcanvas
         show={sidebarOpen}
@@ -73,24 +94,17 @@ const Layout = ({ children }) => {
         className={styles.sidebar}
       >
         <Offcanvas.Header closeButton className={styles.sidebarHeader}>
-          <Offcanvas.Title className={styles.sidebarTitle}> 
-            <Link
-              href="/"
-              onClick={() => setSidebarOpen(false)}
-            >
+          <Offcanvas.Title className={styles.sidebarTitle}>
+            <Link href="/" onClick={() => setSidebarOpen(false)}>
               Home
-            </Link> 
+            </Link>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="px-0 py-4">
           {/* Microeconomics Section */}
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>
-              Microeconomics
-            </h2>
-            
+            <h2 className={styles.sectionTitle}>Microeconomics</h2>
             <div className={styles.subsection}>
-              
               <ul className={styles.navList}>
                 <li>
                   <Link
@@ -121,16 +135,21 @@ const Layout = ({ children }) => {
                 </li>
               </ul>
             </div>
-
             <div className={styles.subsection}>
               <Button
                 variant="link"
                 className={styles.collapseButton}
-                onClick={() => setMicroExercisesOpen(!microExercisesOpen)}
+                onClick={() =>
+                  setMicroExercisesOpen(!microExercisesOpen)
+                }
                 aria-expanded={microExercisesOpen}
               >
                 <span className="d-flex align-items-center">
-                  {microExercisesOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  {microExercisesOpen ? (
+                    <ChevronDown size={16} />
+                  ) : (
+                    <ChevronRight size={16} />
+                  )}
                   <span className="ms-2">Examples</span>
                 </span>
               </Button>
@@ -197,12 +216,8 @@ const Layout = ({ children }) => {
 
           {/* Statistics Section */}
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>
-              Statistics
-            </h2>
-            
+            <h2 className={styles.sectionTitle}>Statistics</h2>
             <div className={styles.subsection}>
-              
               <ul className={styles.navList}>
                 <li>
                   <Link
@@ -219,7 +234,7 @@ const Layout = ({ children }) => {
                     className={styles.navLink}
                     onClick={() => setSidebarOpen(false)}
                   >
-                    Newton's Method
+                    Newton’s Method
                   </Link>
                 </li>
                 <li>
@@ -251,22 +266,29 @@ const Layout = ({ children }) => {
                 </li>
               </ul>
             </div>
-
             <div className={styles.subsection}>
               <Button
                 variant="link"
                 className={styles.collapseButton}
-                onClick={() => setStatExercisesOpen(!statExercisesOpen)}
+                onClick={() =>
+                  setStatExercisesOpen(!statExercisesOpen)
+                }
                 aria-expanded={statExercisesOpen}
               >
                 <span className="d-flex align-items-center">
-                  {statExercisesOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+                  {statExercisesOpen ? (
+                    <ChevronDown size={16} />
+                  ) : (
+                    <ChevronRight size={16} />
+                  )}
                   <span className="ms-2">Examples</span>
                 </span>
               </Button>
               <Collapse in={statExercisesOpen}>
                 <ul className={styles.navList}>
-                  <li className="text-muted fst-italic ps-3">(Coming soon)</li>
+                  <li className="text-muted fst-italic ps-3">
+                    (Coming soon)
+                  </li>
                 </ul>
               </Collapse>
             </div>
@@ -274,9 +296,7 @@ const Layout = ({ children }) => {
         </Offcanvas.Body>
       </Offcanvas>
 
-      <main className={styles.content}>
-        {children}
-      </main>
+      <main className={styles.content}>{children}</main>
     </div>
   );
 };
