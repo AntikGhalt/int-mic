@@ -86,9 +86,9 @@
         ],
         "title": "UMP Exercise 5: CES Utility",
         "description": "Explore the Constant Elasticity of Substitution (CES) utility function, a flexible form that nests multiple preference types.<br/><br/><strong>CES utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Elasticity of substitution:</strong><br/>{mathFormula2}<br/><br/><strong>Optimal consumption ratio:</strong><br/>{mathFormula3}<br/><br/><strong>Special cases to explore:</strong><br/><ul><li>ρ → 1: Perfect substitutes (σ → ∞)</li><li>ρ → 0: Cobb-Douglas (σ = 1)</li><li>ρ → -∞: Perfect complements (σ → 0)</li><li>Adjust ρ to see how substitutability affects optimal choices</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/ump-ces-function?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/ump-ces-function",
-        "editUrl": "https://www.desmos.com/calculator/ump-ces-function"
+        "defaultEmbedUrl": "https://www.desmos.com/3d/ig7xsiedsg?embed",
+        "newTabUrl": "https://www.desmos.com/3d/ig7xsiedsg",
+        "editUrl": "hhttps://www.desmos.com/3d/ig7xsiedsg"
     },
     {
         "uuid": "esempio_06_emp_ces",
@@ -98,9 +98,9 @@
         ],
         "title": "EMP Exercise 6: CES Expenditure",
         "description": "Solve the Expenditure Minimization Problem with CES preferences, exploring how the elasticity of substitution affects cost-minimizing behavior.<br/><br/><strong>Hicksian demand:</strong><br/>{mathFormula1}<br/><br/><strong>Expenditure function:</strong><br/>{mathFormula2}<br/><br/><strong>Interactive analysis:</strong><br/><ul><li>Vary the elasticity parameter to see how it affects expenditure</li><li>Compare expenditure functions across different utility specifications</li><li>Observe how Hicksian demands respond to price changes</li><li>Explore the duality between UMP and EMP in the CES framework</li></ul>",
-        "defaultEmbedUrl": "https://www.desmos.com/calculator/emp-ces-expenditure?embed",
-        "newTabUrl": "https://www.desmos.com/calculator/emp-ces-expenditure",
-        "editUrl": "https://www.desmos.com/calculator/emp-ces-expenditure"
+        "defaultEmbedUrl": "https://www.desmos.com/3d/qdeajbbnrm?embed",
+        "newTabUrl": "https://www.desmos.com/3d/qdeajbbnrm",
+        "editUrl": "https://www.desmos.com/3d/qdeajbbnrm"
     },
     
     {
