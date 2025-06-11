@@ -88,7 +88,7 @@
         "description": "Explore the Constant Elasticity of Substitution (CES) utility function, a flexible form that nests multiple preference types.<br/><br/><strong>CES utility function:</strong><br/>{mathFormula1}<br/><br/><strong>Elasticity of substitution:</strong><br/>{mathFormula2}<br/><br/><strong>Optimal consumption ratio:</strong><br/>{mathFormula3}<br/><br/><strong>Special cases to explore:</strong><br/><ul><li>ρ → 1: Perfect substitutes (σ → ∞)</li><li>ρ → 0: Cobb-Douglas (σ = 1)</li><li>ρ → -∞: Perfect complements (σ → 0)</li><li>Adjust ρ to see how substitutability affects optimal choices</li></ul>",
         "defaultEmbedUrl": "https://www.desmos.com/3d/ig7xsiedsg?embed",
         "newTabUrl": "https://www.desmos.com/3d/ig7xsiedsg",
-        "editUrl": "hhttps://www.desmos.com/3d/ig7xsiedsg"
+        "editUrl": "https://www.desmos.com/3d/ig7xsiedsg"
     },
     {
         "uuid": "esempio_06_emp_ces",
