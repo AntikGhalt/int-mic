@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       const isAtTop         = currentScrollPos <= 0;
 
       // Show navbar when scrolling up or at the very top
-      setVisible(isScrollingUp || isAtTop);
+      setVisible(isScrollingUp || isAtTop || currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 
