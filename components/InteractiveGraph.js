@@ -10,17 +10,29 @@ const InteractiveGraph = ({
   editUrl,
 }) => {
   useEffect(() => {
+    let retryInterval;
+
     const renderMathJax = () => {
       if (typeof window !== 'undefined' && window.MathJax) {
         window.MathJax.typesetPromise()
+          .then(() => {
+            if (retryInterval) {
+              clearInterval(retryInterval);
+              retryInterval = null;
+            }
+          })
           .catch(err => console.error('MathJax typeset error:', err));
       }
     };
 
-    const retryInterval = setInterval(renderMathJax, 500);
+    retryInterval = setInterval(renderMathJax, 500);
     renderMathJax();
 
-    return () => clearInterval(retryInterval);
+    return () => {
+      if (retryInterval) {
+        clearInterval(retryInterval);
+      }
+    };
   }, [description]);
 
   const openNewTab = () => window.open(newTabUrl, "_blank");
